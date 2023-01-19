@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackJack</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="about aligned-column invisible">
+            <h2 class="about-title">Sobre</h2>
+            <div>
+                <p class="about-p">
+                    Projeto muito simples, baseado na proposta das primeiras aulas do <a
+                        href="https://scrimba.com/learn/learnjavascript" target="_blank" class="link">
+                        mini-curso introdutório de JavaScript da Scrimba.<br><br>
+                    </a>
+                    Após finalizar o curso (meu primeiro contato com a linguagem), decidi aperfeiçoar a ideia, alterando
+                    o design e reescrevendo completamente o
+                    código.<br><br>
+                    Diferente da original, na minha versão as cartas foram tratadas como objetos e representadas por
+                    imagens (ao invés do seu valor apenas). Implementei, além disso, a possibilidade de que o valor do
+                    Ás fosse escolhido pelo jogador, como no Blackjack clássico.<br><br>
+                    É claro que Blackjack não pode ser jogado individualmente, mas foi um ótimo estudo.
+                </p>
+                <p class="about-p">Gabriel</p>
+            </div>
+            <img src="img/cards-hand.png" class="cards-hand">
+        </section>
+
+        <div class="align-arrow ">
+            <a href="#about-anchor">
+                <svg width="26" height="23" viewBox="0 0 26 23" fill="#c71212" xmlns="http://www.w3.org/2000/svg"
+                    class="arrow" id="about-anchor">
+                    <path d="M13 23L0.00961882 0.499999L25.9904 0.500002L13 23Z" />
+                </svg>
+            </a>
+
+            <div class="game-wrapper aligned-column ">
+                <h1>Black<span class="title-red">Jack</span>!</h1>
+
+                <div class="table">
+
+                    <p class="game-state">Draw your cards!</p>
+                    <p class="text-sum"><span id="sum"></span></p>
+                    <div class="cards-wrapper">
+                    </div>
+                    <div class="ace-value-wrapper invisible">
+                        <button class="ace-value-btn" id="ace-value1">
+                            1</button>
+                        <button class="ace-value-btn" id="ace-value11">11
+                        </button>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn-main" id="new-card">New Card</buton>
+                            <button class="btn-main" id="new-game">New Game</buton>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
